@@ -11,6 +11,22 @@
     <title>Hello, world!</title>
   </head>
   <body>
+  <body>
+<div class="container">
+<h1>Agregar Registro</h1>
+<div
+class="row">
+<div class="col-sm-12">
+<form action="">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" class="form-control" required> <label for="nombre">Apellido Materno: </label> <button class="btn btn-primary form-control">Guardar</button>
+<label for="apaterno">Apellido Paterno: </label> <input type="text" id="apaterno" name="apaterno" class="form-control" required>
+<input type="text" id="amaterno" name="amaterno" class="form-control" required>
+</form>
+
+</div>
+</div>
+</div>
     <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
