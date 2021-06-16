@@ -65,7 +65,8 @@ public funtion insertar(){
 			return redirect()->to(base_url('/index.php'))->with('mensaje','3,);
 	               }
 }
-         public funtion eliminar ($idPersona){
+         
+public funtion eliminar ($idPersona){
            $gmodel = new GeneralModel();
            $id = ["id" => $idPersonal];
             $respuesta = $gmodel->eliminar($id);
