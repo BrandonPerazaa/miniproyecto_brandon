@@ -4,7 +4,7 @@ use App\Models\GeneralModel;
 
 class General extends BaseController{
 
-           public funtion index(){
+           public function index(){
 
                   $gModel = new GeneralModel();
                   $mensaje = sesion('mensaje');
@@ -17,7 +17,7 @@ return view('listado',$data);
 
 }
 
-public funtion obtenerDatos($id){
+public function obtenerDatos($id){
              $gmodel = new GeneralModel();
              $data = ["id" => $id];
              $respuesta = $gmodel->obtenerInformacion($data);  
@@ -27,7 +27,7 @@ public funtion obtenerDatos($id){
 
 }
 
-public funtion insertar(){
+public function insertar(){
            $gmodel = new GeneralModel();
            $data = [
                     "nombre" => $_POST['nombre'],
@@ -66,7 +66,7 @@ public funtion insertar(){
 	               }
 }
          
-public funtion eliminar ($idPersona){
+public function eliminar ($idPersona){
            $gmodel = new GeneralModel();
            $id = ["id" => $idPersonal];
             $respuesta = $gmodel->eliminar($id);
